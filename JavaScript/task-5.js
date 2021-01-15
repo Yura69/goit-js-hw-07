@@ -7,7 +7,6 @@ const nameOutputRef = document.querySelector('#name-output');
 nameInputRef.addEventListener('input', InputChangeHandler);
     
 function InputChangeHandler(event) {
-    nameOutputRef.value = event.target.value;
     nameOutputRef.textContent =
     nameInputRef.value === '' ? 'незнакомец' : event.target.value;
 }
